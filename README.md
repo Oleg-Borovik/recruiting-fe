@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Change `url` to server url in [env file](https://github.com/Oleg-Borovik/recruiting-fe/blob/master/src/env.ts)
+
 ## Available Scripts
 
 In the project directory, you can run:
