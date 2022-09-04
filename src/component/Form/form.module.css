@@ -1,0 +1,15 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form div, label {
+    margin: 10px;
+}
+.form div, label input {
+    margin: 0 10px;
+}
+.form label select {
+    margin: 0 10px;
+}

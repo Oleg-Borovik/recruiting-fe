@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {ResumeComponent} from "./component/Resume/ResumeComponent";
+import {Link, Route, Routes} from "react-router-dom";
+import {CategoryComponent} from "./component/Cotegory/CategoryComponent";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <nav className="App-link">
+                <Link to={'/'}>Заполнить резюме</Link>
+                <Link to={'/category'}>Посмотреть категории</Link>
+            </nav>
+            <Routes>
+                <Route path={'/'} element={<ResumeComponent/>}></Route>
+                <Route path={'/category'} element={<CategoryComponent/>}></Route>
+            </Routes>
+        </div>
+    );
 }
 
 export default App;

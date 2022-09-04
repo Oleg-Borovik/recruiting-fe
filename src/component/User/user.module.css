@@ -1,0 +1,21 @@
+.div{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    border: 1px black solid;
+}
+.div div{
+    margin: 0 5px;
+    display: flex;
+}
+.div div li ul{
+    display: flex;
+    margin-right:5px;
+}
+.div div li {
+    display: flex;
+    float:left;
+    list-style: none; /*убираем маркеры списка*/
+    margin: 5px; /*убираем отступы*/
+    padding-left: 0; /*убираем отступы*/
+}
